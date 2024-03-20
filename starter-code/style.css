@@ -46,7 +46,12 @@ body {
 	font-size: 2.2rem;
 	line-height: 3.2rem;
 }
-
+.body-s {
+	font-family: 'Outfit';
+	font-weight: 300;
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+}
 body {
 	max-width: 144rem;
 	margin: 0 auto;
@@ -99,6 +104,10 @@ header {
 	color: var(--dark-gray);
 	margin-bottom: 6.4rem;
 }
+.black-letter {
+    color: black; /* Change color to black */
+    /* Optionally, you can add other styles like font-weight, font-size, etc. */
+}
 
 .link-container {
 	display: flex;
@@ -111,7 +120,7 @@ header {
 	font-weight: 800;
 	font-size: 2rem;
 	line-height: 2.4rem;
-	letter-spacing: 3.63636px;
+	letter-spacing: 3.5px;
 	text-transform: uppercase;
 	background-color: var(--almost-black);
 	height: 7.2rem;
@@ -144,3 +153,4 @@ header {
 .link-container:hover .link-img {
 	background-color: var(--almost-black);
 }
+
