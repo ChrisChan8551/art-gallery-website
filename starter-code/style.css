@@ -1,23 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--heading-font: 'Big Shoulders Display', cursive;
+	--body-font: 'Outfit', sans-serif;
+	--white: hsla(0, 0%, 100%, 1);
+	--dark-gray: hsla(0, 0%, 27%, 1);
+	--almost-black: hsla(0, 0%, 8%, 1);
+	--gold: hsla(24, 56%, 63%, 1);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: var(--almost-black);
+}
+
+.header-xl {
+	font-family: 'Big Shoulders Display';
+	font-weight: 900;
+	font-size: 9.6rem;
+	line-height: 8.8rem;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.header-l {
+	font-family: 'Big Shoulders Display';
+	font-weight: 900;
+	font-size: 7rem;
+	line-height: 7rem;
+	text-transform: uppercase;
+}
+
+.body-m {
+	font-family: 'Outfit';
+	font-weight: 300;
+	font-size: 2.2rem;
+	line-height: 3.2rem;
+}
+
+body {
+	max-width: 144rem;
+	margin: 0 auto;
+}
+
 header {
 	position: relative;
 	display: flex;
 }
+
 .header-left {
-    border: red 1px solid;
 	background-color: var(--almost-black);
+	max-width: 45rem;
+	min-width: 0;
 	width: 100%;
 }
 
 .header-right {
-    border: red 1px solid;
 	width: 100%;
+	min-width: 22.8rem;
 }
 
+.painting {
+	min-width: 54rem;
+	width: 100%;
+	height: auto;
+}
 
 .header-content {
-    border: green 1px solid;
+	max-width: 115rem;
 	width: 100%;
+	position: absolute;
+	top: 18.9rem;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0 2rem;
 	display: flex;
+	justify-content: space-between;
 }
 
 .header-left-content {
@@ -25,23 +92,55 @@ header {
 }
 
 .header-right-content {
-	max-width: 100%;
+	max-width: 35rem;
 }
 
-.header-content {
-	width: 100%;
-}
-main {
-	border: blue 1px solid;
-	display: grid;
+.header-content p {
+	color: var(--dark-gray);
+	margin-bottom: 6.4rem;
 }
 
-footer {
-	/* background-color: #151515; */
+.link-container {
 	display: flex;
 }
-.footer-container {
-    display: flex;
-    width: 100%;
-	border: orange 1px solid;
+
+.link {
+	color: var(--white);
+	text-decoration: none;
+	font-family: 'Big Shoulders Display';
+	font-weight: 800;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	letter-spacing: 3.63636px;
+	text-transform: uppercase;
+	background-color: var(--almost-black);
+	height: 7.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 26rem;
+	padding-left: 3.2rem;
+	position: relative;
+}
+
+.link-img {
+	background-color: var(--gold);
+	height: 7.2rem;
+	width: 5.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link img {
+	width: 0.8rem;
+	height: 2.4rem;
+}
+
+.link-container:hover .link {
+	background-color: var(--gold);
+}
+
+.link-container:hover .link-img {
+	background-color: var(--almost-black);
 }
