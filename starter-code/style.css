@@ -52,6 +52,7 @@ body {
 	font-size: 1.8rem;
 	line-height: 2.8rem;
 }
+
 body {
 	max-width: 144rem;
 	margin: 0 auto;
@@ -105,8 +106,7 @@ header {
 	margin-bottom: 6.4rem;
 }
 .black-letter {
-    color: black; /* Change color to black */
-    /* Optionally, you can add other styles like font-weight, font-size, etc. */
+    color: black;
 }
 
 .link-container {
@@ -154,3 +154,50 @@ header {
 	background-color: var(--almost-black);
 }
 
+footer {
+	background-color: var(--almost-black);
+	color: var(--white);
+	width: 100%;
+	min-height: 24.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-container {
+	max-width: 114rem;
+	width: 100%;
+	margin: 2rem 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-container h3 {
+	max-width: 17rem;
+	font-family: 'Big Shoulders Display';
+	font-weight: 900;
+	font-size: 3.4rem;
+	line-height: 2.9rem;
+	margin-right: 12.61%;
+	text-transform: uppercase;
+}
+
+.footer-container p {
+	max-width: 43rem;
+	color: var(--white);
+	margin-right: 25.22%;
+}
+
+.social-media {
+	display: flex;
+	gap: 2rem;
+}
+
+.social-media img {
+	height: 2rem;
+	width: 2rem;
+}
+
+.social-media img:hover {
+	cursor: pointer;
+}
