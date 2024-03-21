@@ -21,8 +21,11 @@ html {
 
 body {
 	color: var(--almost-black);
+	max-width: 144rem;
+	margin: 0 auto;
 }
 
+/* ***************************************** */
 .header-xl {
 	font-family: 'Big Shoulders Display';
 	font-weight: 900;
@@ -39,7 +42,13 @@ body {
 	line-height: 7rem;
 	text-transform: uppercase;
 }
-
+.header-m {
+	font-family: 'Big Shoulders Display';
+	font-weight: 900;
+	font-size: 6rem;
+	line-height: 6rem;
+	text-transform: uppercase;
+}
 .body-m {
 	font-family: 'Outfit';
 	font-weight: 300;
@@ -53,10 +62,7 @@ body {
 	line-height: 2.8rem;
 }
 
-body {
-	max-width: 144rem;
-	margin: 0 auto;
-}
+/* ***************************************** */
 
 header {
 	position: relative;
@@ -106,7 +112,7 @@ header {
 	margin-bottom: 6.4rem;
 }
 .black-letter {
-    color: black;
+	color: black;
 }
 
 .link-container {
@@ -154,6 +160,71 @@ header {
 	background-color: var(--almost-black);
 }
 
+/* ***************************************** */
+main {
+	/* border: solid orange 1px; */
+	max-width: 115rem;
+	margin: 18rem auto;
+	padding: 0 2rem;
+	display: grid;
+	grid-template-columns: minmax(31rem, 44.5rem) auto minmax(31rem, 44.5rem);
+	grid-template-rows: 40rem 31.3rem 37.7rem;
+	gap: 3rem;
+}
+
+.main-top {
+	/* border: solid blue 1px; */
+	max-height: 28rem;
+	max-width: 35rem;
+	height: 100%;
+	margin: auto 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.main-bottom-container {
+	/* border: solid orange 1px; */
+	background-color: var(--almost-black);
+	color: var(--white);
+	height: 100%;
+	grid-row: span 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-bottom {
+	/* border: solid red 1px; */
+	max-width: 35rem;
+	max-height: 24.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+	margin: 1rem;
+}
+.main-top-right-image {
+	/* border: solid blue 1px; */
+	grid-column: span 2;
+}
+
+.main-bottom-left-image {
+	/* border: solid orange 1px; */
+	grid-column: span 2;
+	grid-row: span 2;
+}
+.main-right-middle-image {
+	/* border: solid green 1px; */
+	max-height: 31.3rem;
+}
+
+main img {
+	width: 100%;
+	height: 100%;
+	max-width: 63.5rem;
+	object-fit: cover;
+}
+
+/* ***************************************** */
 footer {
 	background-color: var(--almost-black);
 	color: var(--white);
