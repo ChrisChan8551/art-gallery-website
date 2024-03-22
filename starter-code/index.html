@@ -17,6 +17,14 @@
 		<header>
 			<div class="header-left"></div>
 			<picture>
+				<source
+					media="(max-width: 500px)"
+					srcset="assets/mobile/image-hero@2x.jpg"
+				/>
+				<source
+					media="(max-width: 768px)"
+					srcset="assets/tablet/image-hero@2x.jpg"
+				/>
 				<img
 					src="assets/desktop/image-hero@2x.jpg"
 					alt="art gallery painting"
@@ -26,9 +34,9 @@
 			<div class="header-right"></div>
 			<div class="header-content">
 				<div class="header-left-content">
-					<h1 class="header-xl title">
-						Moder<span class="black-letter"></span>n<br />
-						Art Gal<span class="black-letter">lery</span>
+					<h1 class="header-xl title-bw">
+						Modern <br />
+						Art Gallery
 					</h1>
 				</div>
 				<div class="header-right-content">
@@ -41,10 +49,7 @@
 						<a class="link" href="location.html">
 							Our location
 							<div class="link-img">
-								<img
-									src="assets/icon-arrow-right.svg"
-									alt="location"
-								/>
+								<img src="assets/icon-arrow-right.svg" alt="" />
 							</div>
 						</a>
 					</div>
@@ -61,21 +66,44 @@
 				</p>
 			</div>
 			<picture class="main-top-right-image">
-				<img
-					src="assets/desktop/image-grid-1@2x.jpg"
-					alt="main-top-right-image"
+				<source
+					media="(max-width: 500px)"
+					srcset="assets/mobile/image-grid-1@2x.jpg"
 				/>
+				<source
+					media="(max-width: 768px)"
+					srcset="assets/tablet/image-grid-1@2x.jpg"
+				/>
+				<img src="assets/desktop/image-grid-1@2x.jpg" alt="" />
 			</picture>
 			<picture class="main-bottom-left-image">
+				<source
+					media="(max-width: 500px)"
+					srcset="assets/mobile/image-grid-2@2x.jpg"
+				/>
+				<source
+					media="(max-width: 768px)"
+					srcset="assets/tablet/image-grid-2@2x.jpg"
+				/>
 				<img
 					src="assets/desktop/image-grid-2@2x.jpg"
-					alt="main-bottom-left-image"
+					alt=""
+					class="main-bottom-left-image"
 				/>
 			</picture>
 			<picture class="main-right-middle-image">
+				<source
+					media="(max-width: 500px)"
+					srcset="assets/mobile/image-grid-3@2x.jpg"
+				/>
+				<source
+					media="(max-width: 768px)"
+					srcset="assets/tablet/image-grid-3@2x.jpg"
+				/>
 				<img
 					src="assets/desktop/image-grid-3@2x.jpg"
-					alt="main-right-middle-image"
+					alt=""
+					class="main-right-middle-image"
 				/>
 			</picture>
 			<div class="main-bottom-container">
@@ -103,7 +131,6 @@
 				</div>
 			</div>
 		</footer>
-		Come &amp; be inspired We’re excited to welcome you to our gallery and
-		see how our collections influence you. Modern Art Gallery
+		<!-- <script src="script.js"></script> -->
 	</body>
 </html>
