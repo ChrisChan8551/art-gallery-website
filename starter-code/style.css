@@ -295,6 +295,8 @@ footer {
 
 .social-media img:hover {
 	cursor: pointer;
+	filter: invert(67%) sepia(48%) saturate(387%) hue-rotate(339deg)
+		brightness(187%) contrast(90%);
 }
 
 @media screen and (max-width: 768px) {
@@ -576,6 +578,8 @@ footer {
 	}
 	.social-media img:hover {
 		cursor: pointer;
+		filter: invert(67%) sepia(48%) saturate(387%) hue-rotate(339deg)
+			brightness(187%) contrast(90%);
 	}
 }
 
@@ -870,5 +874,7 @@ footer {
 
 	.social-media img:hover {
 		cursor: pointer;
+		filter: invert(67%) sepia(48%) saturate(387%) hue-rotate(339deg)
+			brightness(187%) contrast(90%);
 	}
 }
